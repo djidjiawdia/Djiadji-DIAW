@@ -2,14 +2,6 @@
     session_start();
     include_once 'functions/fonctions.php';
 
-    if(isset($_POST['valid'])){
-        if(is_numeric($_POST['nbr'])){
-            $_SESSION['nbrMots'] = $_POST['nbr'];
-        }else{
-            echo '<h4>Veuillez entrer un chiffre</h4>';
-        }
-    }
-
 ?>
 
 <!DOCTYPE html>
@@ -27,19 +19,18 @@
         <form method="post">
             <div class="form-group">
                 <label for="nbr">Donnez le nombre de mots</label>
-                <input type="text" value="<?= @$_SESSION['nbrMots'] ?>" name="nbr" id="nbr" class="form-control">
+                <input type="text" value="<?= @$_POST['nbr'] ?>" name="nbr" id="nbr" class="form-control">
             </div>
 
-            <button class="btn"  name="valid">Ok</button>
-        </form>
 
-        <form method="post">
-            <?php if(isset($_SESSION["nbrMots"])){ ?>
+            <button class="btn"  name="valid">Ok</button>
+
+            <?php if(isset($_POST["nbr"])){ ?>
                 <div class="inputMots">
-                <?php for($i=1; $i<=$_SESSION['nbrMots']; $i++){ ?>
+                <?php for($i=1; $i<=$_POST['nbr']; $i++){ ?>
                     <input class="form-control mt" type="text" name="<?= 'mot'.$i ?>" value="<?= @$_POST["mot{$i}"] ?>" placeholder="<?= 'Entrer le mot '.$i ?>">
                 <?php } ?> 
-                    <button class="btn mt" type="submit" name="valider">Valider</button>
+                    <button class="btn mt" type="submit" name="resultat">Résultat</button>
                 </div>
             <?php } ?>
         </form>
@@ -48,22 +39,33 @@
             $errors = [];
             $nbr = 0;
             $tabMots = [];
-            if(isset($_POST['valider'])){
+            if(isset($_POST['valid'])){
+                if(est_numeric($_POST['nbr'])){
+                }else{
+                    echo '<h4>Veuillez entrer un chiffre</h4>';
+                }
+            }
+            if(isset($_POST['resultat'])){
+
                 foreach(delete_last_array($_POST) as $k => $post){
-                    if(size_t($post) > 20){
-                        $errors[] = 'Mot '.($k+1).' a dépassé 20 caractères';
-                    }else if(!est_chaine($post)){
-                        $errors[] = 'Mot '.($k+1).'  est incorrecte (espaces, caractères non alphabétiques, numeric)';
-                    }else if($post === ''){
-                        $errors[] = 'Mot '.($k+1).'  est vide';
+                    if($k>0){
+                        if(size_t($post) > 20){
+                            $errors[] = 'Mot '.$k.' a dépassé 20 caractères';
+                        }else if(!est_chaine($post)){
+                            $errors[] = 'Mot '.$k.'  est incorrecte (espaces, caractères non alphabétiques, numeric)';
+                        }else if($post === ''){
+                            $errors[] = 'Mot '.$k.'  est vide';
+                        }
                     }
                 }
                 if(empty($errors)){
                     $tabMots = delete_last_array($_POST);
-                    foreach($tabMots as $mot){
-                        echo "$mot ";
-                        if(contient_caract($mot, 'M')){
-                            $nbr++;
+                    foreach($tabMots as $k => $mot){
+                        if($k > 0){
+                            echo "$mot ";
+                            if(contient_caract($mot, 'M')){
+                                $nbr++;
+                            }
                         }
                     }
                     echo "<br>Le nombre de mots qui contient 'M': $nbr"; 

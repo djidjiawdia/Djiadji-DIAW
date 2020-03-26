@@ -79,6 +79,15 @@
         return true;
     }
 
+    function est_numeric($nbr){
+        for($i=0; $i<size_t($nbr); $i++){
+            if(!est_chiffre($nbr[$i])){
+                return false;
+            }
+        }
+        return true;
+    }
+
     function contient_caract($chaine, $car){
         for($i=0; $i<size_t($chaine); $i++){
             if($chaine[$i] === car_tolower($car) || $chaine[$i] === car_toupper($car)){
