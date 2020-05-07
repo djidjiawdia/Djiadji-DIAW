@@ -1,0 +1,94 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "HTML est-il un langage de programmation ?",
+            "nbrPoints": "4",
+            "typeRep": "radio",
+            "reponse": [
+                "OUI",
+                "NON"
+            ],
+            "repC": [
+                "1"
+            ]
+        },
+        {
+            "id": 2,
+            "question": "Que signifie HTML ?",
+            "nbrPoints": "6",
+            "typeRep": "texte",
+            "reponse": [
+                "HyperText Markup Langage"
+            ]
+        },
+        {
+            "id": 3,
+            "question": "Quels sont les langages de programmation web ?",
+            "nbrPoints": "6",
+            "typeRep": "checkbox",
+            "reponse": [
+                "HTML",
+                "R",
+                "PHP"
+            ],
+            "repC": [
+                "0",
+                "2"
+            ]
+        },
+        {
+            "id": 4,
+            "question": "Quels sont les frameworks JavaScript ?",
+            "nbrPoints": "6",
+            "typeRep": "checkbox",
+            "reponse": [
+                "Angular",
+                "Bootstrap",
+                "Symfony",
+                "Electron"
+            ],
+            "repC": [
+                "0",
+                "3"
+            ]
+        },
+        {
+            "id": 5,
+            "question": "Le langage C est :",
+            "nbrPoints": "4",
+            "typeRep": "radio",
+            "reponse": [
+                "Compilé",
+                "Interprété"
+            ],
+            "repC": [
+                "0"
+            ]
+        },
+        {
+            "id": 6,
+            "question": "Que signifie PHP ?",
+            "nbrPoints": "4",
+            "typeRep": "texte",
+            "reponse": [
+                "HyperText Preprocessor"
+            ]
+        },
+        {
+            "id": 7,
+            "question": "Que va afficher : echo 'ceci est un \"test\" php' ?",
+            "nbrPoints": "4",
+            "typeRep": "radio",
+            "reponse": [
+                "ceci est un test php",
+                "message d'erreur",
+                "ceci est un \"test\" php"
+            ],
+            "repC": [
+                "2"
+            ]
+        }
+    ],
+    "nbrQuestion": "5"
+}

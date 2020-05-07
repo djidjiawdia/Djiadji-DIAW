@@ -1,0 +1,1065 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(rgba(4, 36, 37, 0.7),rgba(4, 36, 37, 0.7)), url("../images/img-bg.jpg") center/cover no-repeat fixed;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    /* font-family: 'Bebas Neue', cursive; */
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    height: 10vh;
+    background-color: #042425;
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    position: absolute;
+    height: 90px;
+    padding: 10px 0 10px 30px;
+    left: 0;
+}
+
+.logo img{
+    height: 100%;
+}
+ 
+.header-title{
+    font-size: 2.5rem;
+    color: white;
+}
+
+.container{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.center{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-sm{
+    width: 30%;
+}
+
+.col-md{
+    width: 70%;
+}
+
+.card{
+    background-color: #F2F2F2;
+    border-radius: 3px;
+}
+
+.card-md{
+    width: 570px;
+}
+.card-lg{
+    width: 100%;
+}
+
+.card-header{
+    background-color: #51BFD0;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 3px 3px 0 0;
+    padding: 20px;
+    color: white;
+}
+
+.card-header .logout-text{
+    height: 40px;
+    width: 150px;
+    background-color: #14F7E7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    color: white;
+}
+
+.card-header .logout-img{
+    display: none;
+    width: 35px;
+    height: 35px;
+}
+
+.card-header .logout-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.card-header h2{
+    width: 70%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.card-header span{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.card-body{
+    padding: 20px;
+}
+
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px 5px 20px;
+    height: 50px;
+    background: #F8F3F0;
+    border-radius: 0 0 10px 10px;
+}
+
+.form-c{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.form-group-btn{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.form-group-btn a{
+    font-size: large;
+    margin-left: 25px;
+    color: #999999;
+    font-weight: bold;
+}
+
+.form-group img{
+    position: absolute;
+    right: 0;
+    height: 60px;
+    padding: 20px;
+}
+
+.form-control{
+    width: 100%;
+    height: 60px;
+    border-radius: 8px;
+    padding: 10px 60px 10px 20px;
+    color: #999999;
+    font-size: large;
+    font-weight: bold;
+    border: 1px solid #cdcdcd;
+}
+
+.bg-input{
+    background-color: #F0EEF0;
+}
+
+.btn{
+    border: 1px solid;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-lg{
+    height: 50px;
+    width: 160px;
+    border-radius: 8px;
+    font-size: large;
+}
+
+.btn-md{
+    height: 30px;
+    width: 110px;
+    border-radius: 3px;
+    font-size: large;
+}
+
+.btn-primary{
+    background-color: #51BFD0;
+    color: #F0EEF0;
+}
+
+.btn-secondary{
+    background-color: #999999;
+    color: #F0EEF0;
+}
+
+.btn-light{
+    background-color: #14F7E7;
+    color: #F0EEF0;
+}
+
+.inscription{
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    /* border: 1px solid #999999; */
+}
+
+.inscription-header{
+    padding: 10px 30px 0 30px;
+}
+
+.inscription-header h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #464646;
+}
+
+.form-i{
+    margin-top: 20px;
+    border-top: 1.5px solid #999999;
+    padding: 0 30px 10px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group-i{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label{
+    margin-bottom: 8px;
+}
+
+.form-group-avatar{
+    margin: 10px 0 10px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inputavatar{
+    display: block;
+}
+
+input[type='file']{
+    display: none;
+}
+.inputavatar label{
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+.form-i button{
+    height: 50px;
+    width: 160px;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    background-color: #51BFD0;
+    border: none;
+    border-radius: 2px;
+}
+
+.avatar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+
+.avatar img{
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    border: 4px solid #51BFD0;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.profil-card{
+    background-color: white;
+    border-radius: 12px 12px 5px 5px;
+    box-shadow: -1px 0 3px 1px rgba(0,0,0,0.3);
+}
+
+.profil-card-header{
+    background: linear-gradient(#F2F2F2,#51BFD0);
+    height: 170px;
+    border-radius: 12px 12px 0 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px;
+}
+
+.profil-joueur{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profil-card-header div{
+    margin-left: 10px;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.prenom{
+    text-transform: capitalize;
+}
+
+.nom{
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+
+.profil-card-body{
+    margin-top: 3px;
+}
+
+.icon-profil {
+    padding: 10px;
+    height: 135px;
+    width: 135px;
+    line-height: 135px;
+    border: 2px solid #8E8071;
+    border-radius: 50%;
+}
+
+.icon-profil-joueur {
+    padding: 1px;
+    height: 50px;
+    width: 50px;
+    line-height: 135px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.nom-joueur{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+}
+
+ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    padding: 5px 20px 5px 30px;
+}
+
+ul li:hover, .active{
+    background-color: #F2F2F2;
+    border-left: 4px solid #4DAF7B;
+}
+
+ul li a{
+    font-size: 1.2rem;
+    color: #8E8071;
+}
+
+.admin-page{
+    padding: 0 15px 0 15px;
+}
+
+.admin-card{
+    background-color: white;
+    border-radius: 10px;
+    /* padding: 20px; */
+}
+
+.listeJ{
+    width: 70%;
+    padding: 20px 20px 10px 20px;
+}
+
+.listeJ h1{
+    color: #8E8071;
+    font-style: italic;
+    text-align: center;
+}
+
+.listeJ table{
+    width: 100%;
+    border: 1px solid #51BFD0;
+    border-radius: 5%;
+    padding: 10px;
+    color: #8E8071;
+}
+
+.listeJ table thead td{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.nextPrev{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.creerQ{
+    width: 100%;
+    padding: 30px 10px;
+}
+
+.creerQ h1{
+    color: #51BFD0;
+    text-transform: uppercase;
+    padding: 0 30px 10px 30px;
+}
+
+.border{
+    padding: 5px 15px 5px 15px;
+    border-top-left-radius: 10px 30px;
+    border-top-right-radius: 10px 30px;
+    border-bottom-left-radius: 10px 30px;
+    border-bottom-right-radius: 10px 30px;
+}
+
+.border-listeQ{
+    border: 1px solid #E5D4C2;
+}
+
+.shadow{
+    box-shadow: -1px 2px 10px 4px rgba(0,0,0,0.5);
+}
+
+.border-blue{
+    border: 1px solid #51BFD0;
+}
+
+.form-group-q{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.form-group-q label{
+    width: 25%;
+    font-size: 1.2rem;
+    color: #6C6C6C;
+    font-weight: bold;
+}
+.form-textarea{
+    width: 100%;
+    height: 90px;
+    padding: 10px 5px 10px 10px;
+    font-size: 1.25rem;
+    border: none;
+    border-right: 1px solid #51BFD0;
+}
+
+.input-number{
+    height: 45px;
+    width: 120px;
+    padding: 0 5px 0 10px;
+    border: none;
+    border-right: 1px solid #51BFD0;
+}
+
+.input-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input:focus, textarea:focus, select:focus {
+    border: 1px solid #51BFD0;
+    outline: none;
+}
+
+.typeChoix{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.typeChoix input{
+    width: 25px;
+    height: 25px;
+}
+
+.typeChoix input:checked{
+    background: #51BFD0;
+}
+
+.typeChoix img{
+    width: 20px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.select-input{
+    width: 90%;
+    height: 45px;
+    padding: 0 5px 0 10px;
+    border: none;
+    border-right: 1px solid #51BFD0;
+}
+
+.rep-input{
+    width: 80%;
+    height: 45px;
+    padding: 0 5px 0 10px;
+    border: none;
+    border-right: 1px solid #51BFD0;
+}
+
+.addInput{
+    text-align: center;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 5px;
+    width: 45px;
+    height: 45px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    background-color: #51BFD0;
+    border-radius: 3px;
+}
+
+.enregistrer{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.input-error{
+    border: 1px solid red;
+}
+
+.bg-error{
+    background-color: red;
+}
+
+.input-error::placeholder{
+    color: red;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.quest-group{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nbrQuestF{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 20px 10px 0;
+}
+
+.nbrQuestF label{
+    font-size: 1rem;
+    color: #8E8071;
+    margin-right: 10px;
+}
+
+.nbrQuestF button{
+    width: 40px;
+    height: 30px;
+    background-color: rgb(3, 130, 204);
+    outline: none;
+    border: none;
+    color: white;
+}
+
+.nbrQuestF input{
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    margin-right: 10px;
+    font-size: 1.25rem;
+    color: #8E8071;
+    font-weight: bold;
+}
+
+.quest-group h3{
+    color: #8E8071;
+}
+
+.responses{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.resp-group{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.listeQ-Choix{
+    width: 15px;
+    height: 15px;
+}
+
+.interface-Choix{
+    width: 30px;
+    height: 30px;
+}
+
+.respText{
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.listeQ-label{
+    margin-left: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.interface-label{
+    margin-left: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.interface-joueur{
+    background: white;
+    border-radius: 12px;
+    padding: 16px;;
+    height: 100%;
+}
+
+.interfaceForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 460px;
+}
+
+.interface-input{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.interface-txtarea{
+    height: 90px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #51BFD0;
+}
+
+.interface-resp{
+    display: flex;
+    flex-direction: column;
+    margin: 25px 10px 40px 20px;
+}
+
+.interface-pts{
+    width: 60px;
+    height: 35px;
+    text-align: center;
+    font-size: 1rem;
+    border: none;
+    border-right: 1px solid #51BFD0;
+    border-bottom: 1px solid #51BFD0;
+}
+
+.interface-btns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabInterface{
+    display: none;
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-score{
+    /* width: 300px; */
+    padding: 20px;
+}
+
+.tab-score-headers{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab-header{
+    width: 100%;
+    height: 60px;
+    border: none;
+    padding: 1rem;
+    color: #51BFD0;
+    background: transparent;
+    outline: none;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.tab-header.active {
+    color: #605C54;
+    background-color: #fff;
+    box-shadow: 0px -4px 4px 2px rgba(0,0,0,.1);
+}
+
+.tab-contents{
+    top: 75px;
+    background-color: #fff;
+    height: 360px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 3px 8px 5px rgba(0,0,0,.1), 0 5px 10px rgba(0,0,0,.1);
+}
+
+.tab-content {
+    padding: 1rem;
+    display: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.tab-content.is-visible {
+    display: flex;
+    flex-direction: column;
+}
+
+.tab-player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tab-player .score{
+    width: 25%;
+    text-align: center;
+    border-bottom: 4px solid;
+    margin-bottom: 16px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 480px){
+    .logo{
+        height: 60px;
+    }
+    
+    header h1{
+        font-size: 1.5rem;
+    }
+
+    .card-header{
+        height: 70px;
+    }
+
+    .icon-profil-joueur{
+        width: 50px;
+        height: 50px;
+    }
+
+    .profil-joueur h5{
+        display: none;
+    }
+     
+    .card-header .logout-text{
+        display: none;
+    }
+
+    .card-header .logout-img{
+        display: block;
+    }
+    
+    .card-header h2{
+        width: 70%;
+        font-size: .7rem;
+    }
+
+    .form-group-btn a{
+        font-size: 0.75rem;
+    }
+
+    .btn-lg{
+        height: 40px;
+        width: 120px;
+        font-size: 0.8rem;
+    }
+
+    .col-md, .col-sm{
+        width: 100%;
+    }
+
+    .admin-page{
+        padding: 15px 0 15px 0;
+    }
+
+    .nbrQuestF label{
+        font-size: .8rem;
+    }
+    
+    .nbrQuestF button{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .nbrQuestF input{
+        width: 40px;
+        height: 30px;
+    }
+
+    h1{
+        font-size: 1.3rem;
+    }
+
+    h2{
+        font-size: 1.15rem;
+    }
+
+    .interface-label, .listeQ-label, h3{
+        font-size: 1rem;
+    }
+
+    .interface-Choix{
+        width: 20px;
+        height: 20px;
+    }
+
+    .respText{
+        height: 30px;
+    }
+
+    .avatar{
+        margin: 10px;
+    }
+    
+    .avatar img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .listeJ{
+        width: 100%;
+    }
+
+    .form-textarea{
+        height: 140px;
+    }
+
+    .tab-score{
+        padding: 20px 0 10px 0;
+    }
+    
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    
+    header h1{
+        font-size: 2rem;
+    }
+
+    .card-header{
+        height: 80px;
+    }
+
+    .icon-profil-joueur{
+        width: 50px;
+        height: 50px;
+    }
+
+    .profil-joueur h5{
+        display: none;
+    }
+     
+    .card-header .logout-text{
+        display: none;
+    }
+
+    .card-header .logout-img{
+        display: block;
+    }
+    
+    .card-header h2{
+        width: 70%;
+        font-size: 1rem;
+    }
+
+    .col-md, .col-sm{
+        width: 100%;
+    }
+
+    .admin-page{
+        padding: 15px 0 15px 0;
+    }
+
+    .nbrQuestF label{
+        font-size: 1.25rem;
+    }
+    
+    h1{
+        font-size: 1.75rem;
+    }
+
+    h2{
+        font-size: 1.45rem;
+    }
+
+    .interface-label, .listeQ-label, h3{
+        font-size: 1.5rem;
+    }
+
+    .interface-Choix{
+        width: 30px;
+        height: 30px;
+    }
+
+    .respText{
+        height: 40px;
+    }
+
+    .avatar{
+        margin: 10px;
+    }
+    
+    .avatar img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .listeJ{
+        width: 100%;
+    }
+
+    .form-textarea{
+        height: 140px;
+    }
+
+    .tab-score{
+        padding: 20px 0 10px 0;
+    }
+    
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+
+    .icon-profil-joueur{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .card-header h2{
+        width: 60%;
+        font-size: 1.2rem;
+    }
+
+    .avatar img{
+        width: 180px;
+        height: 180px;
+    }
+
+    .avatar h2{
+        font-size: 1.3rem;
+    }
+
+    .col-md{
+        width: 60%;
+    } 
+    .col-sm{
+        width: 40%;
+    }
+
+    .nbrQuestF label{
+        font-size: 1.25rem;
+    }
+    
+    h1{
+        font-size: 1.75rem;
+    }
+
+    h2{
+        font-size: 1.45rem;
+    }
+
+    .interface-label, .listeQ-label, h3{
+        font-size: 1.5rem;
+    }
+
+    .listeJ{
+        width: 80%;
+    }
+
+    .form-textarea{
+        height: 140px;
+    }
+
+    .tab-score{
+        padding: 20px 10px 10px 20px;
+    }
+    
+    .inputavatar label{
+        font-size: 1rem;
+    }
+}
